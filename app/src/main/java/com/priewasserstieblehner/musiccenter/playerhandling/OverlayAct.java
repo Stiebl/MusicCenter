@@ -25,7 +25,9 @@ public class OverlayAct extends YouTubeBaseActivity {
         if(service != null) {
             service.activityInitialized(controllerView, this);
             setFinishOnTouchOutside(false);
+            // sollte nur die overlay activity back bringen und nicht die ganze app
             moveTaskToBack(true);
+            // wird erreicht durch aufrufen von musiccenter mit dem reorder_to_front flag
             restoreMainActivity(null);
         }
 
