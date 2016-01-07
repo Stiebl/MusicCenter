@@ -29,6 +29,7 @@ public class OverlayAct extends YouTubeBaseActivity {
             moveTaskToBack(true);
             // wird erreicht durch aufrufen von musiccenter mit dem reorder_to_front flag
             restoreMainActivity(null);
+            
         }
 
     }
